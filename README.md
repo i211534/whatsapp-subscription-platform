@@ -13,8 +13,6 @@
 
 </div>
 
-![Bajao entertainment platform](public/bajao-welcome.jpg)
-
 ## Overview
 
 Bajao WhatsApp Experience is a production-oriented backend that brings music discovery, premium subscriptions, and digital payments into a conversational WhatsApp journey. It routes each user through a state-driven experience, serves curated content, processes payment callbacks, and activates subscriptions through a single chat-driven workflow.
