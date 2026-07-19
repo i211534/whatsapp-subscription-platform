@@ -13,6 +13,8 @@
 
 </div>
 
+> **Note:** This is a portfolio case study. Project is closed source, proprietary company work built at Rockville Technologies, so no source code is included here.
+
 ## Overview
 
 Bajao WhatsApp Experience is a production oriented backend that brings music discovery, premium subscriptions, and digital payments into a conversational WhatsApp journey. It routes each user through explicit consent, language selection, category browsing, and a payment workflow that culminates in a premium listening experience.
