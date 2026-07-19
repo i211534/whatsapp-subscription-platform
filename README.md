@@ -21,15 +21,15 @@ The platform also supports interactive WhatsApp voice calls. It negotiates WebRT
 
 ## Key Features
 
-- **Conversational subscription funnel** — guides users from first contact through consent, payment, activation, and the subscribed experience.
-- **Free and premium content discovery** — browsable categories, paginated track lists, shuffled recommendations, artwork, audio, and "more tracks" navigation.
-- **Interactive WhatsApp messages** — text, media, templates, reply buttons, lists, call-to-action links, delivery tracking, and read receipts.
-- **Real-time voice experience** — WhatsApp Calling API integration with WebRTC negotiation, FFmpeg decoding, Opus encoding, RTP streaming, and DTMF track controls.
-- **Raast payment orchestration** — token management, account-title lookup, request-to-pay initiation, callback processing, verification, and subscription activation.
-- **Subscription-aware routing** — resolves membership status and directs users to free, payment, suspended, or premium experiences.
-- **Bilingual journeys** — configurable English and Roman Urdu messaging with per-session language selection.
-- **Engagement analytics** — event timelines, unique-user metrics, funnel reporting, and daily activity summaries without storing message bodies.
-- **Operational automation** — scheduled payment reminders, timeout handling, SQL migrations, health checks, and container startup workflows.
+- **Conversational subscription funnel**: guides users from first contact through consent, payment, activation, and the subscribed experience.
+- **Free and premium content discovery**: browsable categories, paginated track lists, shuffled recommendations, artwork, audio, and "more tracks" navigation.
+- **Interactive WhatsApp messages**: text, media, templates, reply buttons, lists, call-to-action links, delivery tracking, and read receipts.
+- **Real-time voice experience**: WhatsApp Calling API integration with WebRTC negotiation, FFmpeg decoding, Opus encoding, RTP streaming, and DTMF track controls.
+- **Raast payment orchestration**: token management, account-title lookup, request-to-pay initiation, callback processing, verification, and subscription activation.
+- **Subscription-aware routing**: resolves membership status and directs users to free, payment, suspended, or premium experiences.
+- **Bilingual journeys**: configurable English and Roman Urdu messaging with per-session language selection.
+- **Engagement analytics**: event timelines, unique-user metrics, funnel reporting, and daily activity summaries without storing message bodies.
+- **Operational automation**: scheduled payment reminders, timeout handling, SQL migrations, health checks, and container startup workflows.
 
 ## Technology Stack
 
@@ -131,8 +131,8 @@ src/
 │   ├── auth/               # Authentication
 │   ├── campaigns/          # Campaign APIs
 │   ├── health-check/       # Service health endpoint
-│   ├── users/              # User management
-│   └── webhook/            # WhatsApp, payments, content, calls, and analytics
+│   ├── users/               # User management
+│   └── webhook/             # WhatsApp, payments, content, calls, and analytics
 ├── seed/                   # Initial application data
 ├── app.module.ts           # Root dependency graph
 └── main.ts                 # Bootstrap, validation, CORS, and Swagger
@@ -205,15 +205,15 @@ http://localhost:3000/docs
 
 ## Main API Routes
 
-- `GET /health-check/v1/check-server` — service health check
-- `GET /webhook` — Meta webhook verification
-- `POST /webhook` — inbound WhatsApp messages, delivery statuses, and call events
-- `GET /call-events` — WhatsApp Calling webhook verification
-- `POST /call-events` — dedicated calling event callback
-- `POST /payment-callback` — payment result processing
-- `GET /webhook/stats` — paginated engagement events
-- `GET /webhook/engagement/report` — engagement and funnel summary
-- `POST /auth/login` — user authentication
+- `GET /health-check/v1/check-server`: service health check
+- `GET /webhook`: Meta webhook verification
+- `POST /webhook`: inbound WhatsApp messages, delivery statuses, and call events
+- `GET /call-events`: WhatsApp Calling webhook verification
+- `POST /call-events`: dedicated calling event callback
+- `POST /payment-callback`: payment result processing
+- `GET /webhook/stats`: paginated engagement events
+- `GET /webhook/engagement/report`: engagement and funnel summary
+- `POST /auth/login`: user authentication
 
 ## Available Commands
 
